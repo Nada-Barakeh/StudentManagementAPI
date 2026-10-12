@@ -26,5 +26,13 @@ Dieses Projekt dient als Übung für die Entwicklung von Web-APIs, Dependency In
   {"id": 2, "name": "Erika Musterfrau", "major": "Physik"}
 ]
 
+
+##  API-Endpunkte (API Endpoints)
+- **GET** `/api/students` : Gibt eine Liste aller Studenten zurück.
+- **GET** `/api/students/{id}` : Gibt einen bestimmten Studenten anhand seiner ID zurück.
+- **POST** `/api/students` : Fügt einen neuen Studenten hinzu.
+- **PUT** `/api/students/{id}` : Aktualisiert die Daten eines Studenten.
+- **DELETE** `/api/students/{id}` : Löscht einen Studenten anhand seiner ID.
+
 ## Auorin (Author)
 Nada Barakeh

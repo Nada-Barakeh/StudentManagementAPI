@@ -25,4 +25,28 @@ public class StudentService {
         stds.add(student);
         return student;
     }
+
+    public Student getStudentById(int id){
+        for(Student s: stds){
+            if(s.getId() == id){
+                return s;
+            }
+        }
+        return null;
+    }
+
+    public boolean deleteStudent(int id){
+        return stds.removeIf(s -> s.getId() == id);
+    }
+    public Student updateStudent(int id, Student updatedStudent) {
+        for (int i = 0; i < stds.size(); i++) {
+            if (stds.get(i).getId() == id) {
+                updatedStudent.setId(id);
+                stds.set(i, updatedStudent);
+                return updatedStudent;
+
+            }
+        }
+        return null; // wenn Student nicht vorhanden ist
+    }
 }
